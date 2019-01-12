@@ -1,0 +1,363 @@
+{
+    "RequestHeader": {
+        "MessageHeader": {
+            "SourceAppID": "340101",
+            "SessionID": "12001159610041703399",
+            "TransactionID": "6692bebf-73b5-47ca-8549-cf5fd0be3b27",
+            "ChannelID": "Mobile",
+            "CustomerID": "M187445934",
+            "ClientIP": "117.136.119.24:0"
+        },
+        "LoggingLevel": 0
+    },
+    "RequestBody": {
+        "XProductSearchCriteria": {
+            "FlightProductGroupList": [
+                {
+                    "FlightRefCombination": [
+                        {
+                            "FlightID": "1",
+                            "SegmentNo": 1,
+                            "SequenceNo": 1,
+                            "MarrySeg": "",
+                            "IsMainSegment": 1
+                        },
+                        {
+                            "FlightID": "2",
+                            "SegmentNo": 2,
+                            "SequenceNo": 1,
+                            "MarrySeg": "",
+                            "IsMainSegment": 1
+                        }
+                    ],
+                    "PriceList": [
+                        {
+                            "FlightSegmentList": [
+                                {
+                                    "ProductDetailIndex": 0,
+                                    "FCSequence": 1,
+                                    "SeatClass": "Y",
+                                    "SeatGrade": "Economy",
+                                    "SeatSource": 0,
+                                    "SeatCount": 9,
+                                    "StockID": 0
+                                },
+                                {
+                                    "ProductDetailIndex": 0,
+                                    "FCSequence": 2,
+                                    "SeatClass": "Y",
+                                    "SeatGrade": "Economy",
+                                    "SeatSource": 0,
+                                    "SeatCount": 9,
+                                    "StockID": 0
+                                }
+                            ],
+                            "ProductDetailList": [
+                                {
+                                    "Channel": "GDS-WS",
+                                    "PriceInfoList": [
+                                        {
+                                            "TravelerCategoryCode": "Adult",
+                                            "Agency": {
+                                                "AgencyID": 137,
+                                                "AgencyCode": "SHA",
+                                                "CityID": 2,
+                                                "CityCode": "SHA",
+                                                "OfficialName": "上海华程西南国际旅行社有限公司"
+                                            },
+                                            "TicketRemark": "YHRCN|YHRCN,",
+                                            "TicketingTimeLimit": {
+                                                "TimeLimitType": 1,
+                                                "LimitTime": 10,
+                                                "AverageTicketingTime": 0
+                                            },
+                                            "PassengerRestriction": {
+                                                "MinPassengerCount": 1,
+                                                "MaxPassengerCount": 9,
+                                                "NationalityInclude": "",
+                                                "NationalityExclude": "",
+                                                "NationalityIncludeCN": "",
+                                                "NationalityExcludeCN": "",
+                                                "MaxAgeLimitition": 0,
+                                                "MinAgeLimitition": 0
+                                            },
+                                            "PriceDetail": {
+                                                "SalePrice": 0,
+                                                "Tax": 0,
+                                                "PublishPrice": 0,
+                                                "AccountPrice": 0,
+                                                "NetPrice": 0
+                                            },
+                                            "OriginalPriceDetail": {
+                                                "Currency": "RMB",
+                                                "SalePrice": 3461,
+                                                "Tax": 787,
+                                                "PublishPrice": 3500,
+                                                "AccountPrice": 3255,
+                                                "NetPrice": 3255
+                                            },
+                                            "Expression": "[SHA-CI-Y-KHH@I.P(5636436197,CI-YHRCN-T,S333507,C{0})]+[KHH-CI-Y-SHA@I.P(5636436197,CI-YHRCN-T,S333507,C{0})]",
+                                            "Exchange": 1,
+                                            "OfficeNo": "SHA717",
+                                            "CommitionSource": 0,
+                                            "DiscountPrice": 0,
+                                            "TextRemarkId": 0
+                                        }
+                                    ],
+                                    "ValidatingCarrier": "CI",
+                                    "ValidatingCarrierName": "中华航空",
+                                    "ProductCategory": "Prioritizing",
+                                    "SubProductCategory": "Owner",
+                                    "InvoiceType": "T",
+                                    "PenaltiesKey": "Ci0KCTEwMDAxMjg5MhIgNDZlZDhiNGVhYjJlNGY3ZWFiNDdlYjBkYjIzZWU0MGMSsQQKAlJUEmkIARIDU0hBGgNLSEgiAkNJKgVZSFJDTjIBWToDMDA4QgRDTjAxSgI5VlIEMDAyOVoBMmICNzJqAkVVgQEAAAAAAFirQIoBA0NOWZIBEzIwMTktMDEtMzBUMDQ6MTU6MDCYAQGgAQGqAQASaQgCEgNLSEgaA1NIQSICQ0kqBVlIUkNOMgFZOgMwMDhCBENOMDFKAjlWUgQwMDI5WgEyYgI3MmoCRVWBAQAAAAAAWKtAigEDQ05ZkgETMjAxOS0wMi0xMFQyMzo0NTowMJgBAaABAaoBABo7ChMyMDE5LTAxLTMwVDAwOjAwOjAwEgNTSEEaACIJCgVORkJFVBIAIhIKEFNDR0FNQkxJTkdQT0xJQ1kidAoCQ0kQBRoVCgNDTlkSDgoDQURUEQAAAAAAWKtAIlUKA0FEVBJOCgNTSEESA0NOWRoOCgNZUUkRAAAAAAAAAAAaEAoFMDAxQ04RAAAAAACAVkAaEAoFMDAxVFcRAAAAAADAW0AaDgoDWVFGEQAAAAAAUIJAKkgIARIDUFZHGgNLSEgiAkNJOgFZQhMyMDE5LTAxLTMwVDA0OjE1OjAwShMyMDE5LTAxLTMwVDA2OjMwOjAwUgZDSTI1ODJaATEqSAgCEgNLSEgaA1BWRyICQ0k6AVlCEzIwMTktMDItMTBUMjM6NDU6MDBKEzIwMTktMDItMTFUMDE6NTU6MDBSBkNJMjU4MVoBMjIOCgEwEAEaBwoDQURUEAE=",
+                                    "TravelerEligibility": "NOR",
+                                    "PriceUnit": {
+                                        "FareList": [
+                                            {
+                                                "FCSequence": 1,
+                                                "FareInfo": {
+                                                    "FareID": "5636436197",
+                                                    "FareBasis": "YHRCN",
+                                                    "FareSource": 0,
+                                                    "OwnerCarrier": "CI",
+                                                    "FareType": 0,
+                                                    "AccountCode": "",
+                                                    "TicketDesignator": "",
+                                                    "TourCode": ""
+                                                }
+                                            },
+                                            {
+                                                "FCSequence": 2,
+                                                "FareInfo": {
+                                                    "FareID": "5636436197",
+                                                    "FareBasis": "YHRCN",
+                                                    "FareSource": 0,
+                                                    "OwnerCarrier": "CI",
+                                                    "FareType": 0,
+                                                    "AccountCode": "",
+                                                    "TicketDesignator": "",
+                                                    "TourCode": ""
+                                                }
+                                            }
+                                        ],
+                                        "CarrierTicketingDeadline": "2019-01-30 04:15:00",
+                                        "QTECmdPostfix": "ADT*01YHRCN*02YHRCN/CI/PUBL",
+                                        "NeedQTE": true,
+                                        "NeedPnr": true,
+                                        "TextRemarkId": 0
+                                    },
+                                    "TagList": [
+                                        {
+                                            "Key": "QTEOfficeNo",
+                                            "Value": "SHA717"
+                                        },
+                                        {
+                                            "Key": "TripType",
+                                            "Value": "RT"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "FlyerFlag": "None",
+                            "RouteSearchToken": "Ctrip|CI2582,1,,30-CI2581,2,,10|Y,Y,-Y,Y,|0|3461,787,SHA-CI|NOR|",
+                            "SortIndicator": 0,
+                            "PackageProduct": {
+                                "AncillariesInfo": {
+                                    "HasBaggageService": false,
+                                    "UnFreeBaggage": false,
+                                    "CheckInServiceStatus": 0
+                                },
+                                "XProductInfo": [ ],
+                                "SpecialProductFlag": 0,
+                                "IsMemberPrice": false,
+                                "IsSupportFFP": false,
+                                "XProductPreposeInfoList": [
+                                    {
+                                        "ProductType": 7,
+                                        "SegmentNo": 1,
+                                        "MarketingType": 1,
+                                        "MarketingAmount": 0,
+                                        "CouponPrice": 20,
+                                        "SubProductType": 263,
+                                        "RuleId": 6271,
+                                        "SPUId": 617,
+                                        "SKUId": "",
+                                        "ProductCode": ""
+                                    },
+                                    {
+                                        "ProductType": 7,
+                                        "SegmentNo": 1,
+                                        "MarketingType": 1,
+                                        "MarketingAmount": 0,
+                                        "CouponPrice": 100,
+                                        "SubProductType": 15,
+                                        "RuleId": 6258,
+                                        "SPUId": 616,
+                                        "SKUId": "",
+                                        "ProductCode": ""
+                                    },
+                                    {
+                                        "ProductType": 7,
+                                        "SegmentNo": 1,
+                                        "MarketingType": 1,
+                                        "MarketingAmount": 0,
+                                        "CouponPrice": 3,
+                                        "SubProductType": 265,
+                                        "RuleId": 6339,
+                                        "SPUId": 476,
+                                        "SKUId": "",
+                                        "ProductCode": ""
+                                    },
+                                    {
+                                        "ProductType": 7,
+                                        "SegmentNo": 1,
+                                        "MarketingType": 1,
+                                        "MarketingAmount": 0,
+                                        "CouponPrice": 100,
+                                        "SubProductType": 257,
+                                        "RuleId": 3526,
+                                        "SPUId": 424,
+                                        "SKUId": "",
+                                        "ProductCode": ""
+                                    }
+                                ],
+                                "HasMoreGrade": false,
+                                "RecommendPrdType": 0,
+                                "CrossSaleHotel": 0
+                            },
+                            "UnaccompaniedAgeRange": "0-12-18"
+                        }
+                    ],
+                    "TagList": [ ],
+                    "HasMoreGrade": false,
+                    "FlightProductGroupID": 0
+                }
+            ],
+            "FlightList": [
+                {
+                    "FlightID": "1",
+                    "MarketingCarrier": {
+                        "AirlineCode": "CI",
+                        "AirlineName": "中华航空",
+                        "Alliance": "天合联盟",
+                        "IsLcc": false
+                    },
+                    "FlightNo": "CI2582",
+                    "OperatingFlightNo": "",
+                    "DepartureCity": {
+                        "CityID": 2,
+                        "CityCode": "SHA",
+                        "CityName": "上海",
+                        "CityNameEN": "Shanghai",
+                        "ProvinceID": 2,
+                        "CountryID": 1,
+                        "CountryName": "中国",
+                        "CountryNameEN": "China",
+                        "IsDomestic": true
+                    },
+                    "ArrivalCity": {
+                        "CityID": 720,
+                        "CityCode": "KHH",
+                        "CityName": "高雄",
+                        "CityNameEN": "Kaohsiung",
+                        "ProvinceID": 53,
+                        "CountryID": 1,
+                        "CountryName": "中国",
+                        "CountryNameEN": "China",
+                        "IsDomestic": false
+                    },
+                    "DepartureAirport": {
+                        "Terminal": "T1",
+                        "PortCode": "PVG",
+                        "PortName": "浦东国际机场",
+                        "PortNameEN": "Pudong International Airport"
+                    },
+                    "ArrivalAirport": {
+                        "Terminal": "I",
+                        "PortCode": "KHH",
+                        "PortName": "高雄国际机场",
+                        "PortNameEN": "Kaohsiung International Airport"
+                    },
+                    "TakeoffDateTime": "2019-01-30 04:15:00",
+                    "ArrivalDateTime": "2019-01-30 06:30:00",
+                    "EquipmentCode": "738",
+                    "Duration": 135,
+                    "ArrivalDays": 0,
+                    "TagList": [
+                        {
+                            "Key": "building",
+                            "Value": "6,758"
+                        }
+                    ],
+                    "TransportType": 0
+                },
+                {
+                    "FlightID": "2",
+                    "MarketingCarrier": {
+                        "AirlineCode": "CI",
+                        "AirlineName": "中华航空",
+                        "Alliance": "天合联盟",
+                        "IsLcc": false
+                    },
+                    "FlightNo": "CI2581",
+                    "OperatingFlightNo": "",
+                    "DepartureCity": {
+                        "CityID": 720,
+                        "CityCode": "KHH",
+                        "CityName": "高雄",
+                        "CityNameEN": "Kaohsiung",
+                        "ProvinceID": 53,
+                        "CountryID": 1,
+                        "CountryName": "中国",
+                        "CountryNameEN": "China",
+                        "IsDomestic": false
+                    },
+                    "ArrivalCity": {
+                        "CityID": 2,
+                        "CityCode": "SHA",
+                        "CityName": "上海",
+                        "CityNameEN": "Shanghai",
+                        "ProvinceID": 2,
+                        "CountryID": 1,
+                        "CountryName": "中国",
+                        "CountryNameEN": "China",
+                        "IsDomestic": true
+                    },
+                    "DepartureAirport": {
+                        "Terminal": "I",
+                        "PortCode": "KHH",
+                        "PortName": "高雄国际机场",
+                        "PortNameEN": "Kaohsiung International Airport"
+                    },
+                    "ArrivalAirport": {
+                        "Terminal": "T1",
+                        "PortCode": "PVG",
+                        "PortName": "浦东国际机场",
+                        "PortNameEN": "Pudong International Airport"
+                    },
+                    "TakeoffDateTime": "2019-02-10 23:45:00",
+                    "ArrivalDateTime": "2019-02-11 01:55:00",
+                    "EquipmentCode": "333",
+                    "Duration": 130,
+                    "ArrivalDays": 1,
+                    "TagList": [
+                        {
+                            "Key": "building",
+                            "Value": "758,6"
+                        }
+                    ],
+                    "TransportType": 0
+                }
+            ],
+            "ExtendedCriteria": {
+                "TravelerList": [
+                    {
+                        "TravelerCategoryCode": "Adult",
+                        "Eligibility": "ALL",
+                        "TravelerCount": 1
+                    }
+                ]
+            }
+        }
+    }
+}

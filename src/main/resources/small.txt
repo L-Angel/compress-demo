@@ -1,0 +1,99 @@
+Skip to content
+
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ @L-Angel Sign out
+362
+9,136 771 facebook/zstd
+ Code  Issues 20  Pull requests 0  Projects 0  Wiki  Insights
+👋Want to submit an issue to facebook/zstd?
+If you have a bug or an idea, read the contributing guidelines before opening an issue.
+
+Issues labeled help wanted or good first issue can be good first contributions.
+
+
+is:issue is:open
+LabelsMilestones
+
+Snap package support(Feature Request)
+#1498 opened 17 hours ago by mikeroyal
+ 1
+Suggestion: compress dictionary files question
+#1497 opened a day ago by ealgase
+ 1
+Feature request: better compression of 16,24,32,64 bit data types feature request
+#1492 opened 7 days ago by neurolabusc
+ 4
+Zstd - compile error: wrong number of arguments specified for 'deprecated' attribute
+#1488 opened 10 days ago by jasonma163
+ 4
+Document/show compression levels' --zstd options feature request
+#1487 opened 12 days ago by hfuru
+ 4
+travis: Improve build time
+#1453 opened 29 days ago by lzutao
+ 3
+Add Debug Log Statements for Decompression Error Conditions?
+#1435 opened on 4 Dec 2018 by felixhandte
+ 3
+cmake target libzstd_static does not export public include directory build issue help wanted
+#1421 opened on 19 Nov 2018 by mateuszzz88
+ 3
+internal header name collision build issue
+#1406 opened on 8 Nov 2018 by gvollant
+ 1
+Is there some plan to support ZSTD_compressBlock_destSize as LZ4? feature request
+#1399 opened on 30 Oct 2018 by hsiangkao
+ 2
+We need a WebAssembly binding help wanted
+#1355 opened on 5 Oct 2018 by naskarsubhajit
+ 3
+Extending the option -o to directories? feature request
+#1334 opened on 22 Sep 2018 by svenha
+ 4
+Add zstd support to kmod feature request help wanted
+#1121 opened on 7 May 2018 by tpgxyz
+ 5
+Hide static symbols from dynamic library by default enhancement good first issue
+#1111 opened on 22 Apr 2018 by mestia
+ 7
+[linux-kernel] Update to v1.3.4 question
+#1101 opened on 7 Apr 2018 by peskal
+ 2
+Improve the buildsystem enhancement
+#715 opened on 31 May 2017 by asarubbo
+ 4
+Is zstd splitabble in hadoop/spark/etc?
+#395 opened on 28 Sep 2016 by trixpan
+ 33
+How to compress streamed items in batches of (roughly) the same (compressed) size? enhancement
+#204 opened on 10 Jun 2016 by KrzysFR
+ 9
+Add File Access Functions enhancement
+#199 opened on 3 Jun 2016 by bryceredd
+ 2
+"Error 36 : Decoding error : Corrupted block detected" on OpenVMS
+#154 opened on 24 Mar 2016 by thatsafunnyname
+ 14
+ ProTip! Notify someone on an issue with a mention, like: @L-Angel.
+© 2019 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+ @ealgase
+ealgase
+Member of Emerson-School-Coders
+Press escape to close this hovercard
+Press h to open a hovercard with more details.
