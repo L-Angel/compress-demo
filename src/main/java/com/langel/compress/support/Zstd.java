@@ -27,7 +27,7 @@ public class Zstd implements Compress, Decompress {
     }
 
     public byte[] decompress(byte[] val) {
-        return com.github.luben.zstd.Zstd.decompress(val, 100000000);
+        return com.github.luben.zstd.Zstd.decompress(val, val.length * 5);
     }
 
     @Override

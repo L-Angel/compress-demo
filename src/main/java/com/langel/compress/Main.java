@@ -20,6 +20,8 @@ public class Main {
         ExecuteRecorder bzipExec = new ExecuteRecorder(bzip, bzip);
         Zstd zstd = new Zstd();
         ExecuteRecorder zstdExec = new ExecuteRecorder(zstd, zstd);
+        ZstdStream zstdStream = new ZstdStream();
+        ExecuteRecorder zstdStreamExec = new ExecuteRecorder(zstdStream,zstdStream);
 
         System.out.println("Small File :");
         int smallNum = 1000;
@@ -44,6 +46,11 @@ public class Main {
         System.out.println("Zstd :");
         byte[] zstdCompressed = zstdExec.compressMulti(smallCnt, smallNum);
         zstdExec.decompressMulti(zstdCompressed, smallNum);
+
+        System.out.println("ZstdStream :");
+        byte[] zstdStreamCompressed = zstdStreamExec.compressMulti(smallCnt, smallNum);
+        zstdExec.decompressMulti(zstdStreamCompressed, smallNum);
+
 
         System.out.println("\n\nGeneral File :");
 
@@ -70,6 +77,10 @@ public class Main {
         zstdCompressed = zstdExec.compressMulti(generalCnt, generalNum);
         zstdExec.decompressMulti(zstdCompressed, generalNum);
 
+//        System.out.println("ZstdStream :");
+//        zstdStreamCompressed = zstdStreamExec.compressMulti(generalCnt, generalNum);
+//        zstdExec.decompressMulti(zstdStreamCompressed, generalNum);
+
         System.out.println("\n\nBig File :");
         int bigNum = 10;
         byte[] bigCnt = FileUtils.readToString("src/main/resources/big.txt").getBytes();
@@ -93,5 +104,9 @@ public class Main {
         System.out.println("Zstd :");
         zstdCompressed = zstdExec.compressMulti(bigCnt, bigNum);
         zstdExec.decompressMulti(zstdCompressed, bigNum);
+
+//        System.out.println("ZstdStream :");
+//        zstdStreamCompressed = zstdStreamExec.compressMulti(bigCnt, bigNum);
+//        zstdExec.decompressMulti(zstdStreamCompressed, bigNum);
     }
 }
