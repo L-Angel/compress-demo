@@ -47,9 +47,9 @@ public class Main {
         byte[] zstdCompressed = zstdExec.compressMulti(smallCnt, smallNum);
         zstdExec.decompressMulti(zstdCompressed, smallNum);
 
-        System.out.println("ZstdStream :");
-        byte[] zstdStreamCompressed = zstdStreamExec.compressMulti(smallCnt, smallNum);
-        zstdExec.decompressMulti(zstdStreamCompressed, smallNum);
+//        System.out.println("ZstdStream :");
+//        byte[] zstdStreamCompressed = zstdStreamExec.compressMulti(smallCnt, smallNum);
+//        zstdExec.decompressMulti(zstdStreamCompressed, smallNum);
 
 
         System.out.println("\n\nGeneral File :");
