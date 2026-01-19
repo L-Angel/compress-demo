@@ -21,6 +21,13 @@ public class Main {
         Zstd zstd = new Zstd();
         ExecuteRecorder zstdExec = new ExecuteRecorder(zstd, zstd);
         ZstdStream zstdStream = new ZstdStream();
+        ZstdL1 zstdL1 = new ZstdL1();
+        ExecuteRecorder zstdExecL1 = new ExecuteRecorder(zstdL1, zstdL1);
+        ZstdL10 zstdL10 = new ZstdL10();
+        ExecuteRecorder zstdExecL10 = new ExecuteRecorder(zstdL10, zstdL10);
+
+        ZstdL19 zstdL19 = new ZstdL19();
+        ExecuteRecorder zstdExecL19 = new ExecuteRecorder(zstdL19, zstdL19);
         ExecuteRecorder zstdStreamExec = new ExecuteRecorder(zstdStream,zstdStream);
 
         System.out.println("Small File :");
@@ -46,6 +53,23 @@ public class Main {
         System.out.println("Zstd :");
         byte[] zstdCompressed = zstdExec.compressMulti(smallCnt, smallNum);
         zstdExec.decompressMulti(zstdCompressed, smallNum);
+
+
+
+        System.out.println("Zstd1 :");
+        zstdCompressed = zstdExecL1.compressMulti(smallCnt, smallNum);
+        zstdExecL1.decompressMulti(zstdCompressed, smallNum);
+
+
+
+        System.out.println("Zstd10 :");
+        zstdCompressed = zstdExecL10.compressMulti(smallCnt, smallNum);
+        zstdExecL10.decompressMulti(zstdCompressed, smallNum);
+
+
+        System.out.println("Zstd19 :");
+        zstdCompressed = zstdExecL19.compressMulti(smallCnt, smallNum);
+        zstdExecL19.decompressMulti(zstdCompressed, smallNum);
 
 //        System.out.println("ZstdStream :");
 //        byte[] zstdStreamCompressed = zstdStreamExec.compressMulti(smallCnt, smallNum);
@@ -77,6 +101,21 @@ public class Main {
         zstdCompressed = zstdExec.compressMulti(generalCnt, generalNum);
         zstdExec.decompressMulti(zstdCompressed, generalNum);
 
+
+        System.out.println("Zstd1 :");
+        zstdCompressed = zstdExecL1.compressMulti(generalCnt, generalNum);
+        zstdExecL1.decompressMulti(zstdCompressed, generalNum);
+
+
+
+        System.out.println("Zstd10 :");
+        zstdCompressed = zstdExecL10.compressMulti(generalCnt, generalNum);
+        zstdExecL10.decompressMulti(zstdCompressed, generalNum);
+
+
+        System.out.println("Zstd19 :");
+        zstdCompressed = zstdExecL19.compressMulti(generalCnt, generalNum);
+        zstdExecL19.decompressMulti(zstdCompressed, generalNum);
 //        System.out.println("ZstdStream :");
 //        zstdStreamCompressed = zstdStreamExec.compressMulti(generalCnt, generalNum);
 //        zstdExec.decompressMulti(zstdStreamCompressed, generalNum);
@@ -105,6 +144,22 @@ public class Main {
         zstdCompressed = zstdExec.compressMulti(bigCnt, bigNum);
         zstdExec.decompressMulti(zstdCompressed, bigNum);
 
+
+
+        System.out.println("Zstd1 :");
+        zstdCompressed = zstdExecL1.compressMulti(bigCnt, bigNum);
+        zstdExecL1.decompressMulti(zstdCompressed, bigNum);
+
+
+
+        System.out.println("Zstd10 :");
+        zstdCompressed = zstdExecL10.compressMulti(bigCnt, bigNum);
+        zstdExecL10.decompressMulti(zstdCompressed, bigNum);
+
+
+        System.out.println("Zstd19 :");
+        zstdCompressed = zstdExecL19.compressMulti(bigCnt, bigNum);
+        zstdExecL19.decompressMulti(zstdCompressed, bigNum);
 //        System.out.println("ZstdStream :");
 //        zstdStreamCompressed = zstdStreamExec.compressMulti(bigCnt, bigNum);
 //        zstdExec.decompressMulti(zstdStreamCompressed, bigNum);
